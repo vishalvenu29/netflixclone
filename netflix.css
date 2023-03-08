@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://assets.nflxext.com/ffe/siteui/vlv3/a43711df-c428-4f88-8bb3-b2ac5f20608f/32935458-d049-44c2-b94b-32f16d60ded1/IN-en-20230227-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+   
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+   width: 180px;
+   margin-left: -50px;
+   
+}
+.logo:hover{
+    transform: scale(1.3,1.3);
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+  
+
+}
+button:hover{
+    transform: scale(1.1,1.1);
+  
+}
+
+button a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.header-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 30px;
+}
+.header-container h1{
+    font-size: 60px;
+    line-height: 71px;
+    font-weight: 500;
+    max-width: 650px;
+    text-align: center;
+
+}
+.header-container h2{
+    font-weight: 400;
+    margin-top: 10px;
+
+}
+.header-container p{
+    margin-top: 20px;
+    font-weight: 500;
+   
+}
+.email-signup{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden; 
+}
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.email-signup button{
+    background-color: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+
+
+    
+}
+.line{
+    width: 100%;
+    height: 8px;
+    background-color: rgb(52, 51, 51);
+}
+
+.features{
+    padding: 20px 12%;
+    font-size: 22px;
+
+}
+
+.row1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+}
+.text-col1{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col1{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+   
+}
+.img-col1 img{
+    display: block;
+    width: 90%;
+    margin-left: 120px;
+    margin-top: 80px;
+   
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+
+}
+.row2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+}
+.text-col2{
+    flex-basis: 50%;
+    margin-bottom: 10px;
+    
+}
+.img-col2{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col2 img{
+    display: block;
+    width: 90%;
+    margin-left: -50px;
+    margin-top: 80px;
+
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 80px;
+
+
+}
+/* faq */
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 60px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type=radio]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type=radio]:checked + label +.content {
+max-height: 600px;
+padding: 30px 20px;
+}
+
+.accordion input[type=radio]:checked + label::after{
+    transform:rotate(135deg) ;
+}
+
+.faq .email-signup{
+    max-width: 700px;
+    margin: 20px auto 60px;
+}
+
+.faq small{
+    font-size: 18px;
+
+}
+/*  footer */
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333 ;
+    color: #777;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .row{
+    display: flex;
+    align-items: center;
+}
+.footer .col{
+   
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px; 
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.col a:hover{
+    color: #fff;
+}
+.accordion label:hover{
+    transform: scale(1.1,1.1);
+
+}
+.footer h2:hover{
+    color: #fff;
+}
